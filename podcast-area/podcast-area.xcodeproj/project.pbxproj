@@ -11,6 +11,14 @@
 		AD60796926FF033E006987ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60796826FF033E006987ED /* ContentView.swift */; };
 		AD60796B26FF033F006987ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60796A26FF033F006987ED /* Assets.xcassets */; };
 		AD60796E26FF033F006987ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60796D26FF033F006987ED /* Preview Assets.xcassets */; };
+		AD60797A26FF141E006987ED /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60797926FF141E006987ED /* MainTabView.swift */; };
+		AD60797C26FF1544006987ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60797B26FF1544006987ED /* HomeView.swift */; };
+		AD60797E27006289006987ED /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60797D27006289006987ED /* SearchView.swift */; };
+		AD607980270062E8006987ED /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60797F270062E8006987ED /* WriteView.swift */; };
+		AD607984270074AD006987ED /* SliderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD607983270074AD006987ED /* SliderMenuView.swift */; };
+		AD60798627007A50006987ED /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60798527007A50006987ED /* SideMenuViewModel.swift */; };
+		AD60798827007A8F006987ED /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60798727007A8F006987ED /* SideMenuOptionView.swift */; };
+		AD60798A2700B068006987ED /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6079892700B068006987ED /* SideMenuHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		AD60796A26FF033F006987ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD60796D26FF033F006987ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD60796F26FF033F006987ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD60797926FF141E006987ED /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AD60797B26FF1544006987ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD60797D27006289006987ED /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AD60797F270062E8006987ED /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		AD607983270074AD006987ED /* SliderMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuView.swift; sourceTree = "<group>"; };
+		AD60798527007A50006987ED /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		AD60798727007A8F006987ED /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
+		AD6079892700B068006987ED /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,9 @@
 		AD60796526FF033E006987ED /* podcast-area */ = {
 			isa = PBXGroup;
 			children = (
+				AD60797726FF13F2006987ED /* Model */,
+				AD60797626FF13EC006987ED /* View */,
+				AD60797526FF13C7006987ED /* ViewModels */,
 				AD60796626FF033E006987ED /* podcast_areaApp.swift */,
 				AD60796826FF033E006987ED /* ContentView.swift */,
 				AD60796A26FF033F006987ED /* Assets.xcassets */,
@@ -67,6 +86,51 @@
 				AD60796D26FF033F006987ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD60797526FF13C7006987ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD60797626FF13EC006987ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD6079822700747F006987ED /* SliderMenu */,
+				AD60797826FF13FE006987ED /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD60797726FF13F2006987ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD60797826FF13FE006987ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AD60797926FF141E006987ED /* MainTabView.swift */,
+				AD60797B26FF1544006987ED /* HomeView.swift */,
+				AD60797D27006289006987ED /* SearchView.swift */,
+				AD60797F270062E8006987ED /* WriteView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AD6079822700747F006987ED /* SliderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AD607983270074AD006987ED /* SliderMenuView.swift */,
+				AD60798527007A50006987ED /* SideMenuViewModel.swift */,
+				AD60798727007A8F006987ED /* SideMenuOptionView.swift */,
+				AD6079892700B068006987ED /* SideMenuHeaderView.swift */,
+			);
+			path = SliderMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD60798627007A50006987ED /* SideMenuViewModel.swift in Sources */,
+				AD607984270074AD006987ED /* SliderMenuView.swift in Sources */,
+				AD60797E27006289006987ED /* SearchView.swift in Sources */,
 				AD60796926FF033E006987ED /* ContentView.swift in Sources */,
+				AD607980270062E8006987ED /* WriteView.swift in Sources */,
+				AD60798A2700B068006987ED /* SideMenuHeaderView.swift in Sources */,
+				AD60797C26FF1544006987ED /* HomeView.swift in Sources */,
 				AD60796726FF033E006987ED /* podcast_areaApp.swift in Sources */,
+				AD60797A26FF141E006987ED /* MainTabView.swift in Sources */,
+				AD60798827007A8F006987ED /* SideMenuOptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
